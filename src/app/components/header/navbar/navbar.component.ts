@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
+islogin  =true;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  logout(){
+    this.islogin = !this.islogin;
+    console.log("your are Logout");
+    
+  }
 }
